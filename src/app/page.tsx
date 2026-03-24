@@ -201,11 +201,11 @@ export default function HomePage() {
             <p className="hero-description" style={{ fontSize: '1.15rem', color: '#9ca3af', lineHeight: 1.7, marginBottom: '2.5rem', maxWidth: '480px' }}>
               Join Triangle Sports Academy — where champions are forged through expert coaching, world-class facilities, and a passion for excellence.
             </p>
-            <div className="hero-btns" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <a href="#register" className="btn-primary animate-pulse-glow" style={{ padding: '0.9rem 2rem', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+            <div className="hero-btns">
+              <a href="#register" className="btn-primary animate-pulse-glow hero-btn" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
                 Start Training <ChevronRight size={18} />
               </a>
-              <a href="#gallery" className="btn-secondary" style={{ padding: '0.9rem 2rem', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
+              <a href="#gallery" className="btn-secondary hero-btn" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
                 <Play size={18} /> View Gallery
               </a>
             </div>
@@ -577,6 +577,7 @@ export default function HomePage() {
         .contact-grid { grid-template-columns: 1fr 1fr; }
         .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
         .hero-btns { justify-content: flex-start; }
+        .hero-btn { padding: 0.9rem 2rem; font-size: 1rem; justify-content: center; }
         
         .orbit-container { width: 380px; height: 380px; }
         .shuttle-icon { font-size: clamp(6rem, 10vw, 7rem); line-height: 1; }
@@ -634,7 +635,8 @@ export default function HomePage() {
           .section-padding { padding: 3rem 1.25rem; }
           .hero-content { padding: 0 0.5rem; }
           .hero-title { font-size: 2.2rem; }
-          .hero-btns { flex-direction: column !important; align-items: stretch !important; max-width: 300px; margin: 0 auto; }
+          .hero-btns { flex-direction: column !important; align-items: stretch !important; max-width: 260px; margin: 0 auto; }
+          .hero-btn { padding: 0.7rem 1.5rem !important; font-size: 0.9rem !important; }
           .coaches-grid, .pricing-grid, .testimonials-grid, .gallery-grid { grid-template-columns: 1fr !important; }
           .form-grid { grid-template-columns: 1fr !important; }
           .batches-grid { grid-template-columns: 1fr !important; }
