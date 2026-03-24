@@ -38,32 +38,32 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a1a] flex items-center justify-center p-6 md:p-12 relative overflow-hidden">
+    <div className="min-h-screen bg-[#0a0a1a] relative overflow-hidden flex items-center justify-center p-6 md:p-12 lg:p-20">
       {/* Background orbs */}
       <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '-100px', left: '-100px', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(245,158,11,0.1) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
 
-      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16 relative z-10">
-        
+      <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16 relative z-10">
+
         {/* LEFT SIDE: Content Section */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center animate-fade-in">
-          <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', marginBottom: '2.5rem' }}>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left max-w-lg animate-fade-in">
+          <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', marginBottom: '3rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="/logo.png" alt="Triangle Sports Academy" style={{ height: '64px', width: 'auto', objectFit: 'contain' }} />
+              <img src="/logo.png" alt="Triangle Sports Academy" style={{ height: '70px', width: 'auto', objectFit: 'contain' }} />
             </div>
             <div>
-              <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '2rem', color: '#f9fafb', lineHeight: 1 }}>Triangle</div>
+              <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '2.2rem', color: '#f9fafb', lineHeight: 1 }}>Triangle</div>
               <div style={{ fontSize: '0.8rem', color: '#818cf8', letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 600 }}>Sports Academy</div>
             </div>
           </Link>
-          
+
           <h1 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '3.5rem', fontWeight: 900, color: '#f9fafb', lineHeight: 1.1, marginBottom: '1.5rem' }}>
             Welcome <span className="gradient-text">Back!</span>
           </h1>
-          <p style={{ color: '#9ca3af', fontSize: '1.2rem', lineHeight: 1.6, maxWidth: '440px', marginBottom: '2rem' }}>
+          <p style={{ color: '#9ca3af', fontSize: '1.2rem', lineHeight: 1.6, marginBottom: '2.5rem' }}>
             Sign in to access your dashboard, manage training sessions, and track athlete progress at Triangle Sports Academy.
           </p>
-          
+
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: '#6b7280' }}>
             <div style={{ width: '40px', height: '1px', background: '#374151' }}></div>
             <span style={{ fontSize: '0.9rem', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Empowering Champions</span>
@@ -74,7 +74,7 @@ export default function LoginPage() {
         <div className="w-full md:w-1/2 flex items-center justify-center animate-fade-in delay-200">
           <div className="w-full max-w-[480px]">
             <div className="glass-strong" style={{ borderRadius: '2rem', padding: '2.5rem', border: '1px solid rgba(99,102,241,0.2)', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)' }}>
-              
+
               <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700, color: '#f9fafb', marginBottom: '1.5rem', textAlign: 'center' }}>Account Login</h2>
 
               {/* Demo credentials */}
@@ -135,4 +135,4 @@ export default function LoginPage() {
     </div>
   );
 }
- 
+
