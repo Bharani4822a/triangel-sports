@@ -55,8 +55,8 @@ function InlineNavbar() {
 
             {/* Login CTA */}
             <div className="desktop-menu" style={{ marginLeft: '1rem', paddingLeft: '1rem', borderLeft: '1px solid rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center' }}>
-              <Link href="/login" className="btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.85rem', textDecoration: 'none' }}>
-                Login
+              <Link href="/login" className="btn-primary nav-login-btn" style={{ padding: '0.5rem 1.25rem', fontSize: '0.85rem', textDecoration: 'none' }}>
+                <span>Login</span>
               </Link>
             </div>
 
@@ -77,8 +77,8 @@ function InlineNavbar() {
             </a>
           ))}
           <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid #1f2937' }}>
-            <Link href="/login" className="btn-primary" style={{ display: 'block', width: '100%', textAlign: 'center', padding: '0.75rem 1.5rem', textDecoration: 'none' }} onClick={() => setMenuOpen(false)}>
-              Login to Dashboard
+            <Link href="/login" className="btn-primary nav-login-btn" style={{ display: 'block', width: '100%', textAlign: 'center', padding: '0.75rem 1.5rem', textDecoration: 'none' }} onClick={() => setMenuOpen(false)}>
+              <span>Login to Dashboard</span>
             </Link>
           </div>
         </div>
@@ -203,10 +203,10 @@ export default function HomePage() {
             </p>
             <div className="hero-btns">
               <a href="#register" className="btn-primary animate-pulse-glow hero-btn" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
-                Start Training <ChevronRight size={18} />
+                <span>Start Training</span> <ChevronRight size={18} />
               </a>
               <a href="#gallery" className="btn-secondary hero-btn" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
-                <Play size={18} /> View Gallery
+                <Play size={18} /> <span>View Gallery</span>
               </a>
             </div>
             {/* Trust badges */}
@@ -473,7 +473,7 @@ export default function HomePage() {
                 <textarea className="input-field" placeholder="Any specific requirements or questions..." value={formData.message} onChange={e => setFormData(prev => ({ ...prev, message: e.target.value }))} rows={3} style={{ resize: 'vertical' }} />
               </div>
               <button type="submit" className="btn-primary" style={{ width: '100%', padding: '1rem', fontSize: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                <Send size={18} /> Submit Registration
+                <Send size={18} /> <span>Submit Registration</span>
               </button>
             </form>
           )}
@@ -491,7 +491,7 @@ export default function HomePage() {
         <div style={{ display: 'grid', gap: '3rem', alignItems: 'start' }} className="contact-grid">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             {[
-              { icon: MapPin, label: 'Address', value: '42, Sports Complex Road,\nKoramangala, Bengaluru – 560034', color: '#6366f1' },
+              { icon: MapPin, label: 'Address', value: 'Uththirappan Kaadu, Perumall Kovil Main St,\nSalem, Tamil Nadu 636010', color: '#6366f1' },
               { icon: Phone, label: 'Phone', value: '+91 98765 43210\n+91 80 2345 6789', color: '#10b981' },
               { icon: Mail, label: 'Email', value: 'info@trianglesportsacademy.com\nadmin@trianglesportsacademy.com', color: '#f59e0b' },
               { icon: Clock, label: 'Academy Hours', value: 'Mon–Sat: 5:30 AM – 9:00 PM\nSunday: 7:00 AM – 1:00 PM', color: '#3b82f6' },

@@ -2,6 +2,7 @@
 import { useAuth } from '@/context/AuthContext';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import DashboardSidebar from '@/components/DashboardSidebar';
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { user, isLoading } = useAuth();
@@ -25,7 +26,8 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   if (!user) return null;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', background: '#0a0a1a' }}>
+    <div style={{ display: 'flex', minHeight: '100vh', background: '#0a0a1a' }}>
+      <DashboardSidebar />
       <main style={{ flex: 1, overflowX: 'hidden' }}>
         <div style={{ padding: '2rem 1.5rem', maxWidth: '1440px', margin: '0 auto', width: '100%' }}>
           {children}

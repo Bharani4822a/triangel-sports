@@ -6,9 +6,9 @@ import { Zap, Eye, EyeOff, LogIn, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 
 const demoCredentials = [
-  { role: 'Admin', email: 'admin@smashpro.com', password: 'admin123', color: '#6366f1', icon: '👑' },
-  { role: 'Coach', email: 'coach@smashpro.com', password: 'coach123', color: '#f59e0b', icon: '🏅' },
-  { role: 'Student', email: 'student@smashpro.com', password: 'student123', color: '#10b981', icon: '🎯' },
+  { role: 'Admin', email: 'admin@trianglesportsacademy.com', password: 'admin123', color: '#6366f1', icon: '👑' },
+  { role: 'Coach', email: 'coach@trianglesportsacademy.com', password: 'coach123', color: '#f59e0b', icon: '🏅' },
+  { role: 'Student', email: 'student@trianglesportsacademy.com', password: 'student123', color: '#10b981', icon: '🎯' },
 ];
 
 export default function LoginPage() {
@@ -99,9 +99,9 @@ export default function LoginPage() {
             </div>
             <button type="submit" className="btn-primary" style={{ width: '100%', marginBottom: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem' }} disabled={isLoading}>
               {isLoading ? (
-                <> <div className="spinner" style={{ width: '18px', height: '18px', border: '2px solid rgba(255,255,255,0.3)', borderTopColor: 'white', borderRadius: '50%', animation: 'spin 1s linear infinite' }} /> Signing in... </>
+                <> <div className="spinner" style={{ width: '18px', height: '18px', border: '2px solid rgba(255,255,255,0.3)', borderTopColor: 'white', borderRadius: '50%', animation: 'spin 1s linear infinite' }} /> <span>Signing in...</span> </>
               ) : (
-                <><LogIn size={18} /> Sign In</>
+                <><LogIn size={18} /> <span>Sign In</span></>
               )}
             </button>
           </form>

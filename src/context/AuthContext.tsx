@@ -22,15 +22,15 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 const DEMO_USERS: User[] = [
-  { id: '1', name: 'Admin User', email: 'admin@smashpro.com', role: 'admin', phone: '+91 98765 43210' },
-  { id: '2', name: 'Coach Rajan', email: 'coach@smashpro.com', role: 'coach', phone: '+91 98765 11111' },
-  { id: '3', name: 'Student Arjun', email: 'student@smashpro.com', role: 'student', phone: '+91 98765 22222' },
+  { id: '1', name: 'Admin User', email: 'admin@trianglesportsacademy.com', role: 'admin', phone: '+91 98765 43210' },
+  { id: '2', name: 'Coach Rajan', email: 'coach@trianglesportsacademy.com', role: 'coach', phone: '+91 98765 11111' },
+  { id: '3', name: 'Student Arjun', email: 'student@trianglesportsacademy.com', role: 'student', phone: '+91 98765 22222' },
 ];
 
 const DEMO_PASSWORDS: Record<string, string> = {
-  'admin@smashpro.com': 'admin123',
-  'coach@smashpro.com': 'coach123',
-  'student@smashpro.com': 'student123',
+  'admin@trianglesportsacademy.com': 'admin123',
+  'coach@trianglesportsacademy.com': 'coach123',
+  'student@trianglesportsacademy.com': 'student123',
 };
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
