@@ -576,7 +576,7 @@ export default function HomePage() {
         .form-grid { grid-template-columns: 1fr 1fr; }
         .contact-grid { grid-template-columns: 1fr 1fr; }
         .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
-        .hero-btns { justify-content: flex-start; }
+        .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: flex-start; }
         .hero-btn { padding: 0.9rem 2rem; font-size: 1rem; justify-content: center; }
         
         .orbit-container { width: 380px; height: 380px; }
@@ -614,7 +614,7 @@ export default function HomePage() {
           .desktop-menu { display: none !important; }
           .mobile-toggle { display: block !important; }
           .hero-grid { grid-template-columns: 1fr !important; text-align: center; }
-          .hero-btns { justify-content: center !important; }
+          .hero-btns { display: flex; flex-direction: row; gap: 1rem; justify-content: center !important; }
           .hero-description { margin: 0 auto 2.5rem !important; }
           .hero-visual { margin-top: 2rem; }
           .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
@@ -635,7 +635,7 @@ export default function HomePage() {
           .section-padding { padding: 3rem 1.25rem; }
           .hero-content { padding: 0 0.5rem; }
           .hero-title { font-size: 2.2rem; }
-          .hero-btns { flex-direction: column !important; align-items: stretch !important; max-width: 260px; margin: 0 auto; }
+          .hero-btns { flex-direction: column !important; align-items: stretch !important; max-width: 260px; margin: 0 auto; gap: 0.75rem !important; }
           .hero-btn { padding: 0.7rem 1.5rem !important; font-size: 0.9rem !important; }
           .coaches-grid, .pricing-grid, .testimonials-grid, .gallery-grid { grid-template-columns: 1fr !important; }
           .form-grid { grid-template-columns: 1fr !important; }
