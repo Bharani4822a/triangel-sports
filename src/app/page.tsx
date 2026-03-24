@@ -511,8 +511,8 @@ export default function HomePage() {
           <div className="card map-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, rgba(99,102,241,0.1), rgba(245,158,11,0.05))', border: '2px dashed rgba(99,102,241,0.3)' }}>
             <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🗺️</div>
             <div style={{ fontWeight: 700, color: '#818cf8', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Triangle Sports Academy</div>
-            <div style={{ color: '#9ca3af', textAlign: 'center', fontSize: '0.9rem', padding: '0 2rem' }}>42, Sports Complex Road, Koramangala, Bengaluru – 560034</div>
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ marginTop: '1.5rem', padding: '0.6rem 1.25rem', fontSize: '0.85rem', textDecoration: 'none' }}>Open in Google Maps</a>
+            <div style={{ color: '#9ca3af', textAlign: 'center', fontSize: '0.9rem', padding: '0 2rem' }}>Uththirappan Kaadu, Perumall Kovil Main St, Salem, Tamil Nadu 636010</div>
+            <a href="https://maps.app.goo.gl/Mo75FCsVm4pUYZ2v8" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ marginTop: '1.5rem', padding: '0.6rem 1.25rem', fontSize: '0.85rem', textDecoration: 'none' }}>Open in Google Maps</a>
           </div>
         </div>
       </section>
