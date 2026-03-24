@@ -138,9 +138,9 @@ const galleryItems = [
 ];
 
 const coaches = [
-  { name: 'Coach Rajan Pillai', role: 'Head Coach', exp: '15 years', achievement: 'State Champion 2010, National Level Coach', color: '#6366f1' },
-  { name: 'Coach Preethi Nair', role: 'Juniors Coach', exp: '8 years', achievement: 'U-18 National Medalist, Certified BWF Coach', color: '#f59e0b' },
-  { name: 'Coach Suresh Babu', role: 'Fitness Coach', exp: '10 years', achievement: 'Sports Science Degree, Elite Athlete Trainer', color: '#10b981' },
+  { name: 'Coach Hari Haran', role: 'Head Coach', exp: '15 years', achievement: 'State Champion 2010, National Level Coach', color: '#6366f1', image: '/hari.jpeg' },
+  { name: 'Coach Sri Vidhiya', role: 'Juniors Coach', exp: '8 years', achievement: 'U-18 National Medalist, Certified BWF Coach', color: '#f59e0b', image: '/sri.jpeg' },
+  { name: 'Coach Yuvaraj', role: 'Fitness Coach', exp: '10 years', achievement: 'Sports Science Degree, Elite Athlete Trainer', color: '#10b981', image: '/yuvaraj.jpeg' },
 ];
 
 function AnimatedCounter({ target, suffix = '' }: { target: number; suffix?: string }) {
@@ -283,8 +283,8 @@ export default function HomePage() {
         <div style={{ display: 'grid', gap: '2rem' }} className="coaches-grid">
           {coaches.map((coach, i) => (
             <div key={coach.name} className="card animate-fade-in" style={{ animationDelay: `${i * 0.15}s`, textAlign: 'center', padding: '2.5rem 2rem' }}>
-              <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: `linear-gradient(135deg, ${coach.color}, ${coach.color}88)`, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', fontSize: '3rem', border: `3px solid ${coach.color}44` }}>
-                👨‍🏫
+              <div style={{ width: '120px', height: '120px', borderRadius: '50%', overflow: 'hidden', margin: '0 auto 1.5rem', border: `3px solid ${coach.color}44`, boxShadow: `0 10px 20px ${coach.color}22` }}>
+                <img src={(coach as any).image} alt={coach.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.3rem', fontWeight: 700, color: '#f9fafb', marginBottom: '0.4rem' }}>{coach.name}</h3>
               <div style={{ color: coach.color, fontWeight: 600, fontSize: '0.9rem', marginBottom: '0.75rem' }}>{coach.role}</div>

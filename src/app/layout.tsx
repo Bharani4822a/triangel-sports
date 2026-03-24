@@ -13,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <title>Triangle Sports Academy</title>
         <meta name="description" content="Premier badminton training academy — expert coaching, world-class facilities, all age groups" />
+        <link rel="icon" href="/logo.png" />
       </head>
       <body>
         <AuthProvider>
