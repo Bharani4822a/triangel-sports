@@ -402,7 +402,7 @@ export default function HomePage() {
       <div className="section-divider" style={{ maxWidth: '1280px', margin: '0 auto' }} />
 
       {/* ─── TESTIMONIALS ─── */}
-      <section className="section-padding" style={{ maxWidth: '1280px', margin: '0 auto' }}>
+      <section id="testimonials" className="section-padding" style={{ maxWidth: '1280px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.25)', borderRadius: '9999px', padding: '0.4rem 1rem', marginBottom: '1rem' }}>
             <Star size={14} color="#10b981" />
