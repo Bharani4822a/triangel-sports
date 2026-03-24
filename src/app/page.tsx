@@ -223,7 +223,7 @@ export default function HomePage() {
           {/* Hero visual */}
           <div style={{ display: 'flex', justifyContent: 'center', position: 'relative' }} className="animate-fade-in delay-300 hero-visual">
             <div className="animate-float orbit-container" style={{ background: 'linear-gradient(135deg, rgba(99,102,241,0.2), rgba(245,158,11,0.2))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid rgba(99,102,241,0.2)', position: 'relative' }}>
-              <div className="shuttle-icon">🏸</div>
+              <img src="/logo.png.png" alt="Triangle Sports Academy" className="shuttle-icon" style={{ objectFit: 'contain' }} />
               {/* Orbit stats */}
               {stats.map((stat, i) => {
                 const angles = [0, 90, 180, 270];
@@ -581,7 +581,7 @@ export default function HomePage() {
         .logo-img { height: 48px; width: auto; }
         
         .orbit-container { width: 380px; height: 380px; }
-        .shuttle-icon { font-size: clamp(6rem, 10vw, 7rem); line-height: 1; }
+        .shuttle-icon { width: clamp(6rem, 10vw, 7rem); height: auto; }
         .orbit-stat-label { font-size: 0.65rem; }
         .registration-container { padding: 2.5rem; }
         .map-container { height: 400px; }
@@ -625,7 +625,7 @@ export default function HomePage() {
           .footer-grid { grid-template-columns: 1fr 1fr !important; }
           .contact-grid { grid-template-columns: 1fr !important; }
           .orbit-container { width: 320px; height: 320px; }
-          .shuttle-icon { font-size: 6rem; }
+          .shuttle-icon { width: 6rem; height: auto; }
           .logo-img { height: 40px; }
         }
 
@@ -646,7 +646,7 @@ export default function HomePage() {
           .stats-grid { grid-template-columns: 1fr 1fr !important; }
           .registration-container { padding: 1.5rem; }
           .orbit-container { width: 220px; height: 220px; }
-          .shuttle-icon { font-size: 5rem; }
+          .shuttle-icon { width: 4.5rem; height: auto; }
           .logo-img { height: 32px; }
           .orbit-stat { padding: 0.4rem 0.6rem !important; min-width: 80px !important; }
           .orbit-stat-label { font-size: 0.5rem; }
