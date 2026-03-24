@@ -34,8 +34,8 @@ function InlineNavbar() {
 
           {/* Logo & Club Name (Left) */}
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none', flexShrink: 0 }}>
-            <div style={{ width: '40px', height: '40px', background: 'linear-gradient(135deg, #6366f1, #f59e0b)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Zap size={22} color="white" strokeWidth={2.5} />
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/logo.png" alt="Triangle Sports Academy" className="logo-img" style={{ objectFit: 'contain' }} />
             </div>
             <div>
               <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1.2rem', color: '#f9fafb', lineHeight: 1 }}>Triangle</div>
@@ -522,8 +522,8 @@ export default function HomePage() {
         <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'grid', gap: '3rem' }} className="footer-grid">
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '1rem' }}>
-              <div style={{ width: '36px', height: '36px', background: 'linear-gradient(135deg, #6366f1, #f59e0b)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Zap size={18} color="white" />
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <img src="/logo.png" alt="Triangle Sports Academy" className="logo-img" style={{ objectFit: 'contain' }} />
               </div>
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1.1rem', color: '#f9fafb' }}>Triangle Sports Academy</span>
             </div>
@@ -578,6 +578,7 @@ export default function HomePage() {
         .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
         .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: flex-start; }
         .hero-btn { padding: 0.9rem 2rem; font-size: 1rem; justify-content: center; }
+        .logo-img { height: 48px; width: auto; }
         
         .orbit-container { width: 380px; height: 380px; }
         .shuttle-icon { font-size: clamp(6rem, 10vw, 7rem); line-height: 1; }
@@ -625,6 +626,7 @@ export default function HomePage() {
           .contact-grid { grid-template-columns: 1fr !important; }
           .orbit-container { width: 320px; height: 320px; }
           .shuttle-icon { font-size: 6rem; }
+          .logo-img { height: 40px; }
         }
 
         @media (max-width: 640px) {
@@ -645,6 +647,7 @@ export default function HomePage() {
           .registration-container { padding: 1.5rem; }
           .orbit-container { width: 220px; height: 220px; }
           .shuttle-icon { font-size: 5rem; }
+          .logo-img { height: 32px; }
           .orbit-stat { padding: 0.4rem 0.6rem !important; min-width: 80px !important; }
           .orbit-stat-label { font-size: 0.5rem; }
           .map-container { height: 250px; }
