@@ -33,7 +33,7 @@ function InlineNavbar() {
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '72px' }}>
 
           {/* Logo & Club Name (Left) */}
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none', flexShrink: 0 }}>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none', flexShrink: 0 }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <img src="/logo.png" alt="Triangle Sports Academy" className="logo-img" style={{ objectFit: 'contain' }} />
             </div>
@@ -521,7 +521,7 @@ export default function HomePage() {
       <footer style={{ background: '#0d1117', borderTop: '1px solid #1f2937', padding: '3rem 1.5rem' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'grid', gap: '3rem' }} className="footer-grid">
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '1rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', marginBottom: '1rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img src="/logo.png" alt="Triangle Sports Academy" className="logo-img" style={{ objectFit: 'contain' }} />
               </div>
