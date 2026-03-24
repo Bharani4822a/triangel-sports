@@ -51,8 +51,8 @@ export default function LoginPage() {
               <Zap size={28} color="white" strokeWidth={2.5} />
             </div>
             <div>
-              <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '1.6rem', color: '#f9fafb' }}>SmashPro</div>
-              <div style={{ fontSize: '0.7rem', color: '#6b7280', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Badminton Academy</div>
+              <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '1.6rem', color: '#f9fafb' }}>Triangle</div>
+              <div style={{ fontSize: '0.7rem', color: '#6b7280', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Sports Academy</div>
             </div>
           </Link>
           <h1 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.8rem', fontWeight: 800, color: '#f9fafb', marginTop: '1.5rem' }}>Welcome Back!</h1>

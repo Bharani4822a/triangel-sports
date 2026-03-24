@@ -581,7 +581,7 @@ export default function HomePage() {
         .logo-img { height: 48px; width: auto; }
         
         .orbit-container { width: 380px; height: 380px; }
-        .shuttle-icon { width: clamp(6rem, 10vw, 7rem); height: auto; }
+        .shuttle-icon { width: clamp(8rem, 12vw, 10rem); height: auto; }
         .orbit-stat-label { font-size: 0.65rem; }
         .registration-container { padding: 2.5rem; }
         .map-container { height: 400px; }
@@ -625,7 +625,7 @@ export default function HomePage() {
           .footer-grid { grid-template-columns: 1fr 1fr !important; }
           .contact-grid { grid-template-columns: 1fr !important; }
           .orbit-container { width: 320px; height: 320px; }
-          .shuttle-icon { width: 6rem; height: auto; }
+          .shuttle-icon { width: 8rem; height: auto; }
           .logo-img { height: 40px; }
         }
 
@@ -646,7 +646,7 @@ export default function HomePage() {
           .stats-grid { grid-template-columns: 1fr 1fr !important; }
           .registration-container { padding: 1.5rem; }
           .orbit-container { width: 220px; height: 220px; }
-          .shuttle-icon { width: 4.5rem; height: auto; }
+          .shuttle-icon { width: 6rem; height: auto; }
           .logo-img { height: 32px; }
           .orbit-stat { padding: 0.4rem 0.6rem !important; min-width: 80px !important; }
           .orbit-stat-label { font-size: 0.5rem; }
