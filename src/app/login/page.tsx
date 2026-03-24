@@ -47,8 +47,8 @@ export default function LoginPage() {
         {/* Logo */}
         <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
           <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', marginBottom: '0.5rem' }}>
-            <div style={{ width: '52px', height: '52px', background: 'linear-gradient(135deg, #6366f1, #f59e0b)', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Zap size={28} color="white" strokeWidth={2.5} />
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/logo.png" alt="Triangle Sports Academy" style={{ height: '52px', width: 'auto', objectFit: 'contain' }} />
             </div>
             <div>
               <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '1.6rem', color: '#f9fafb' }}>Triangle</div>
